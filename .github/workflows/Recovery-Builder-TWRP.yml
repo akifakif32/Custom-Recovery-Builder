@@ -99,8 +99,8 @@ jobs:
       id: manifest
       with:
         cond: ${{ github.event.inputs.MANIFEST_BRANCH == 'twrp-11' || github.event.inputs.MANIFEST_BRANCH == 'twrp-12.1' }}
-        if_true: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
-        if_false: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
+        if_true: https://github.com/SHRP-Reborn/manifest.git
+        if_false: https://github.com/SHRP-Reborn/manifest.git
 
     - name: Initialize Repo
       run: |
